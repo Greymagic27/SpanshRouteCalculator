@@ -3,6 +3,8 @@ package spansh_route_calc;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
@@ -203,7 +205,7 @@ public class Run {
 
             return totalJumps;
 
-        } catch (Exception e) {
+        } catch (JsonSyntaxException | InterruptedException | IOException e) {
             return Integer.MAX_VALUE;
         }
     }
@@ -232,7 +234,7 @@ public class Run {
                 Thread.sleep(delay);
                 delay = Math.min(delay * 2, 5000);
 
-            } catch (Exception ignored) {
+            } catch (JsonSyntaxException | InterruptedException | IOException ignored) {
             }
         }
 
