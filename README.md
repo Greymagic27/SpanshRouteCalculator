@@ -10,4 +10,4 @@ Once these details are entered, the tool will begin to search through the neutro
 When the tool has finished, it will produce a URL to the best route, so you can follow it via the spansh website.
 <img width="1714" height="980" alt="image" src="https://github.com/user-attachments/assets/4af3c409-3338-49b4-b28a-78da9023f134" />
 
-This tool will also remember the last information provided to it, as it generates a .properties file in the directory you ran it in last
+This tool will also remember the last information provided to it, as it generates a .properties file in the directory you ran it in last.
